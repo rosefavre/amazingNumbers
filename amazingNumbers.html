@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Numbers</title>
+    <link rel="stylesheet" href="amazingNumbers.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="amazingNumbers.js"></script>
+  </head>
+  <body>
+
+
+    <div class="emptydiv"> </div>
+
+
+    <div id="principaldiv">
+          <h1>Discover some interesting things about numbers !</h1>
+          <div class="div">
+                <p style="color : #93162b; font-size:1.2em; text-align:center">Choose what number you want to have informations about :</p>
+                <form action="index.html" method="post" style="display :flex; align-items : center">
+                    <input id='userInput' type="number" value="">
+                    <div class="buttons">
+                        <button class="submitButton" type="button" onclick="getNumber()">Search this number</button>
+                        <button class="submitButton" type="button" onclick="randomNumber()">Random number</button>
+                      </div>
+                </form>
+                <p id="notFoundMessage"></p>
+                <p id="displayNumberInformation"></p>
+                <p id="tips">TIPS : Click again on the button if you want to see another information about the same number !</p>
+          </div>
+
+          <div class="div">
+                <p style="color : #93162b; font-size:1.2em; text-align:center">Choose a date you want to have informations about (format mm/dd) :</p>
+                <form action="index.html" method="post" style="display :flex; align-items : center">
+                    <input id='inputDate' type="text" value="">
+                    <div class="buttons">
+                        <button class="submitButton" type="button" onclick="getDate()">Search this date</button>
+                        <button class="submitButton" type="button" onclick="randomDate()">Random date</button>
+                   </div>
+                </form>
+                <p id="notFoundMessage2"></p>
+                <p id="displayDateInformation"></p>
+                <p id="tips2">TIPS : Click again on the button if you want to see another information about the same date !</p>
+          </div>
+
+
+          <div class="div">
+                <p style="color : #93162b; font-size:1.2em; text-align:center">Choose a year you want to have informations about :</p>
+                <form class="" action="index.html" method="post" style="display :flex; align-items : center">
+                    <input id='inputYear' type="number" value="">
+                    <div class="buttons">
+                        <button class="submitButton" type="button" onclick="getYear()">Search this year</button>
+                        <button class="submitButton" type="button" onclick="randomYear()">Random year</button>
+                    </div>
+                </form>
+                <p id="notFoundMessage3"></p>
+                <p id="displayYearInformation"></p>
+                <p id="tips3">TIPS : Click again on the button if you want to see another information about the same year !</p>
+          </div>
+
+          <div class="div">
+                <p style="color : #93162b; font-size:1.2em; text-align:center">Choose what number you want to have mathematical properties about :</p>
+                <form class="" action="index.html" method="post" style="display :flex; align-items : center">
+                    <input id='inputMath' type="number" value="">
+                    <div class="buttons">
+                        <button class="submitButton" type="button" onclick="getMathNumber()">Search this math number</button>
+                        <button class="submitButton" type="button" onclick="randomMathNumber()">Random math number</button>
+                    </div>
+                </form>
+                <p id="notFoundMessage4"></p>
+                <p id="displayMathInformation"></p>
+                <p id="tips4">TIPS : Click again on the button if you want to see another information about the same number !</p>
+          </div>
+
+    </div>
+
+    <div class="emptydiv"> </div>
+
+  </body>
+</html>

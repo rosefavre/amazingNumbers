@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+body {
+  background-image: url("panel3.jpg");
+  background-repeat: no-repeat;
+  background-position: center  ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  min-height: 100vh;
+  margin: 0;
+}
+
+
+h1 {
+  text-align: center;
+}
+
+#principaldiv {
+  z-index: 2;
+  background-color: white;
+  box-shadow: 10px 10px 5px black;
+  border-color: black;
+  border-width: thin;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-family: Calibri;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex : 60%;
+}
+
+.div{
+  min-height: 30vh;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#userInput, #inputDate, #inputYear, #inputMath {
+  margin-left: 20px;
+  font-family: Poppins;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.submitButton {
+  width: 100px;
+  height: 60px;
+  border-radius: 12px;
+  font-family: Calibri;
+  border : 2px solid #93162b;
+  margin-left: 20px;
+  outline: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+#notFoundMessage, #notFoundMessage2, #notFoundMessage3, #notFoundMessage4 {
+  text-align: center;
+  color : red;
+  font-size: 0.9em;
+}
+
+#displayNumberInformation, #displayDateInformation, #displayYearInformation, #displayMathInformation {
+  text-align: center;
+}
+
+#tips, #tips2, #tips3, #tips4 {
+  text-align: center;
+  display: none;
+  font-size: 0.9em;
+  color : #034d7a;
+}
+
+.emptydiv {
+
+  flex:20%;
+  z-index: 2;
+}
