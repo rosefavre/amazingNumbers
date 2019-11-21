@@ -45,7 +45,7 @@ form {
   justify-content: center;
 }
 
-#userInput, #inputDate, #inputYear, #inputMath {
+#userInput, #inputMonth, #inputDay, #inputYear, #inputMath {
   margin-left: 20px;
   font-family: Poppins;
 }

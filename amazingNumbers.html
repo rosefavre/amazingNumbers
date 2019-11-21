@@ -32,7 +32,9 @@
           <div class="div">
                 <p style="color : #93162b; font-size:1.2em; text-align:center">Choose a date you want to have informations about (format mm/dd) :</p>
                 <form action="index.html" method="post" style="display :flex; align-items : center">
-                    <input id='inputDate' type="text" value="">
+                    <input id='inputMonth' type="number" value="" placeholder="Enter the month" required>
+                    <input id="inputDay" type="number" name="" value="" placeholder="Enter the day" required>
+
                     <div class="buttons">
                         <button class="submitButton" type="button" onclick="getDate()">Search this date</button>
                         <button class="submitButton" type="button" onclick="randomDate()">Random date</button>

@@ -69,7 +69,36 @@ function randomNumber() {
 
 
 function getDate() {
-    var date = document.getElementById('inputDate').value;
+    var month = document.getElementById('inputMonth').value;
+    var day = document.getElementById("inputDay").value;
+
+    if (month < 1 || month > 12)
+    {
+      document.getElementById("notFoundMessage2").innerHTML = "Please enter a valid month (from 1 to 12).";
+    }
+    else if (month == 2)
+    {
+        if (day > 27 || day < 1)
+        {
+          document.getElementById("notFoundMessage2").innerHTML = "Please enter a day between 1 and 27.";
+        }
+    }
+    else if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)
+    {
+        if (day > 31 || day < 1)
+        {
+          document.getElementById("notFoundMessage2").innerHTML = "Please enter a day between 1 and 31.";
+        }
+    }
+    else
+    {
+      if (day > 30 || day < 1)
+      {
+        document.getElementById("notFoundMessage2").innerHTML = "Please enter a day between 1 and 30.";
+      }
+    }
+
+    var date = month + "/" + day;
 
      $.get('http://numbersapi.com/'+date+'/date?json', function(data)
       {
@@ -95,7 +124,8 @@ function getDate() {
 
 function randomDate() {
     document.getElementById("tips2").style.display = "none";
-    document.getElementById("inputDate").value = "";
+    document.getElementById("inputMonth").value = "";
+    document.getElementById("inputDay").value = "";
 
     var month = Math.floor(Math.random() * 12 + 1);
     var day = Math.floor(Math.random() * 28 + 1);
