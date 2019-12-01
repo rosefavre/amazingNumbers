@@ -1,9 +1,10 @@
-
+var numberSearched = [];
+var researches = [];
+var i=0;
 
 
 function getNumber() {
     var number = document.getElementById('userInput').value;
-
     if (number < 0)
     {
       document.getElementById("notFoundMessage").innerHTML = "Please enter a positive number."
@@ -11,6 +12,11 @@ function getNumber() {
 
     else
     {
+          numberSearched[i] = number;
+          researches[i] = 'Research ' +(i+1);
+          i++;
+          drawChart(numberSearched, researches);
+
           $.get('http://numbersapi.com/'+number+'?json', function(data)
           {
             if (data.found === false)
@@ -60,6 +66,7 @@ function randomNumber() {
         else
         {
           $('#displayNumberInformation').text(data.text);
+
         }
 
       });

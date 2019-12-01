@@ -5,9 +5,14 @@
     <title>Numbers</title>
     <link rel="stylesheet" href="amazingNumbers.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script type="text/javascript" src="amazingNumbers.js"></script>
+    <script type="text/javascript" src="chart.js">
+
+    </script>
   </head>
   <body>
+
 
 
     <div class="emptydiv"> </div>
@@ -73,10 +78,18 @@
                 <p id="displayMathInformation"></p>
                 <p id="tips4">TIPS : Click again on the button if you want to see another information about the same number !</p>
           </div>
+          <p style="color : #93162b; font-size:1.2em; text-align:center">Follow what numbers you already searched</p>
+
+          <div class="chart-container">
+            <canvas id="chart"></canvas>
+          </div>
 
     </div>
 
     <div class="emptydiv"> </div>
+
+
+
 
   </body>
 </html>
